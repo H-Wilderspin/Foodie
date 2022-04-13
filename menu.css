@@ -1,0 +1,257 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+/* ----------------------------------- Header ----------------------------------- */
+.Menu-header {
+    background-color: #2b2b2b;
+    padding: 4rem 2rem 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+}
+.Menu-logo {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: white;
+    font: 3rem "Poppins", sans-serif;
+    cursor: pointer;
+}
+.Menu-btns {
+    background-color: transparent;
+    display: flex;
+    margin-top: 1.9rem;
+}
+
+.Menu-btn {
+    background-color: transparent;
+    color: rgb(180, 180, 180);
+    min-width: 6.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font: lighter 1.5rem "Poppins", sans-serif;
+    border: none;
+}
+.Menu-btn:hover,
+.Menu-btn:focus {
+    cursor: pointer;
+    color: #ffffff;
+}
+.Menu-back {
+    background-color: transparent;
+    color: #effbfe6b;
+    font: lighter 1rem "Poppins", sans-serif;
+    padding: 0.8rem;
+    margin-bottom: .5rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.Menu-back:hover,
+.Menu-back:focus {
+    color: #effbfe;
+}
+.Menu-btn:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+/* ------------------------------- Main Content ------------------------------------- */
+.Menu-hero {
+    display: flex;
+    flex-direction: column;
+}
+.Menu-gridContainer {
+    display: grid;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-auto-rows: 16rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-auto-flow: dense;
+}
+
+.MenuItem-gridImage {
+    min-height: fill;
+    object-fit: cover;
+}
+
+.MenuItem-gridObject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.MenuItem-hoverElements {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    align-items: baseline;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    background-color: #000000ab;
+}
+.MenuItem-span{
+    padding-top: 1rem;
+
+}
+.MenuItem-quantity{
+    position: absolute;
+    padding: 2rem 1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    color: white;
+    background-color: #00000091;
+    border: 1px solid #000000;
+    font: 2rem "Poppins", sans-serif;
+    z-index: 100;
+}
+.MenuItem-plusBtn,
+.MenuItem-minusBtn {
+    top: -50px;
+    cursor: pointer;
+    z-index: 100;
+}
+.MenuItem-productDescription {
+    color: rgba(255, 255, 255, 0.534);
+    text-align: center;
+    padding: .5rem 1rem .8rem;
+    z-index: 100;
+    background-color: #000000;
+}
+
+.Menu-reviewOrderBtn {
+    background-color: #3d3d3d;
+    height: 7vh;
+    width: 250px;
+    display: flex;
+    position: fixed;
+    border-radius: 15px;
+    bottom: 7vh;
+    left: 50%;
+    margin-left: -125px;
+    align-items: center;
+    justify-content: center;
+    color: #effbfec5;
+    font: 1.2rem "Poppins", sans-serif;
+    cursor: pointer;
+    border: none;
+    z-index: 150;
+}
+.Menu-reviewOrderBtn:hover,
+.Menu-reviewOrderBtn:focus {
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+  .Menu-header{
+      flex-direction: column;
+      padding-top: 4rem;
+
+  }
+  .Menu-logo{
+      margin-bottom: -3.25rem;
+      
+  }
+  .Menu-btns{
+      order: 3;
+      display: block;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+}
+.PlaceOrder-basketElContainer{
+    min-height: 69vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.PlaceOrder-total{
+    font: 1.5rem "Poppins", sans-serif;
+    align-self: flex-end;
+    padding: 1rem 2rem;
+}
+.PlaceOrder-msg{
+    height: 7vh;
+    width: 250px;
+    display: flex;
+    position: fixed;
+    bottom: 7vh;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px;
+    align-items: center;
+    justify-content: center;
+    color: #effbfec5;
+    font: 1.2rem "Poppins", sans-serif;
+    border: none;
+    z-index: 150;
+}
+.BasketItem-container{
+    border-bottom: 1px solid rgb(131, 126, 126);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.BasketItem-img{
+    max-height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+.BasketItem-qtyControls{
+    min-width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    font: lighter 1.5rem "Poppins", sans-serif;
+}
+.BasketItem-name, .BasketItem-price{
+    font: 1.5rem "Poppins", sans-serif;
+    width: 20%;
+}
+
+  /* ---------------------------------- Footer --------------------------------------- */
+
+  .Menu-footer{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-end;
+  }
+  .Menu-footer-btn {
+    background: transparent;
+    color: white;
+    margin: 2rem;
+    border: none;
+
+  }
+  .Menu-footer-logo{
+      height: 4rem;
+      opacity: .8;
+      filter:  invert(48%) saturate(07%) brightness(95%) contrast(80%);
+  }
+  .Menu-footer-logo:hover, .Menu-footer-logo:focus {
+      opacity: 1;
+      filter: brightness(200%);
+  }
+ 
