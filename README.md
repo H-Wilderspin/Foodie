@@ -2,18 +2,18 @@
 Capstone solo project for Scrimba Module 12 Advanced React
 
 Topics excersized:
-  Figma design
-  UX / UI
-  Components
-  Conditional rendering
-  Props
-  React-router-dom
-  Context
-  Separation of concerns
-  Reusability
-  JSX styling
-  Proptypes
-  Custom hooks
+  Figma design,
+  UX / UI,
+  Components,
+  Conditional rendering,
+  Props,
+  React-router-dom,
+  Context,
+  Separation of concerns,
+  Reusability,
+  JSX styling,
+  Proptypes,
+  Custom hooks.
   
   
  Figma design:
